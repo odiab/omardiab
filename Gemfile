@@ -4,7 +4,7 @@ gem 'rails', '3.2.6'
 gem 'pg'
 gem 'therubyracer'
 gem 'bootstrap-sass'
-
+gem 'haml-rails', '>= 0.3.4', :group => :development
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
