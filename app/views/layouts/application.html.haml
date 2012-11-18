@@ -10,9 +10,10 @@
     .div#header
       %span#pageheader Omar Diab
       %ul.nav
-        -@sections.each do |section|
-          %li.section
-            = link_to(section, section)
+        -Omardiab::Application.config.sections.each do |section|
+          -if section != @curSection
+            %li.section
+              = link_to(section, section)
     .div#content
       = yield
     .div#footer

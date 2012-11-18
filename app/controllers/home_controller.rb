@@ -1,5 +1,9 @@
 class HomeController < ApplicationController
+  before_filter :set_section
   def index    
-    @sections = ['projects', 'experience', 'documents', 'contact']
+  end
+
+  def set_section
+    @curSection = 'home'
   end
 end
