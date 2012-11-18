@@ -7,4 +7,15 @@
     = @headtags
     = csrf_meta_tags
   %body
-    = yield
+    .div#header
+      %span#pageheader Omar Diab
+      %ul.nav
+        -@sections.each do |section|
+          %li.section
+            = link_to(section, section)
+    .div#content
+      = yield
+    .div#footer
+      %p
+        Omar Diab &copy; 2012 &#124; 
+        = link_to('About this site', 'about')
