@@ -8,16 +8,16 @@
     = @headtags
     = csrf_meta_tags
   %body
-    .div#header
-      %span#pageheader Omar Diab
+    #header
+      %span#banner Omar Diab
       %ul.nav
         -Omardiab::Application.config.sections.each do |section|
           -if section != @curSection
             %li.section
               = link_to(section, section)
-    .div#content
+    #content
       = yield
-    .div#footer
+    #footer
       %p
         Omar Diab &copy; 2012 &#124; 
         = link_to('About this site', 'about')
