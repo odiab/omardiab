@@ -25,12 +25,25 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 5%;
+}
+
+div#footer {
+  background: #fbfbfb;
+  padding: .25%;
+  text-align: center;
 }
 
 ul.nav {
   font-size: 150%;
-  font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 300;
+  display: inline;
+}
+
+ul.nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 4%;
 }
 
 ul.nav a:link, a:visited, a:hover, a:active {
@@ -39,6 +52,7 @@ ul.nav a:link, a:visited, a:hover, a:active {
 }
 
 #pageheader {
-  font-family: 'Just Me Again Down Here', cursive;
-  font-size: 250%;
+  font-size: 350%;
+  font-weight: 300;
+  padding-right: 2%;
 }
