@@ -28,11 +28,24 @@ body {
   margin: 5%;
 }
 
-div#footer {
+div#header, div#content, div#footer {
   clear: both;
+}
+
+div#footer {
   background: #fbfbfb;
   padding: .25%;
   text-align: center;
+}
+
+#banner {
+  padding-right: 2%;
+}
+
+#bannerText {
+  font-size: 350%;
+  font-weight: 300;
+  display: inline-block;
 }
 
 ul.nav {
@@ -47,7 +60,7 @@ ul.nav li {
   padding-right: 4%;
 }
 
-ul.nav a:link, a:visited, a:hover, a:active {
+div#header a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: black;  
 }
@@ -78,8 +91,3 @@ div.leftPane img.icon {
   max-height: 100%;
 }
 
-#banner {
-  font-size: 350%;
-  font-weight: 300;
-  padding-right: 2%;
-}
