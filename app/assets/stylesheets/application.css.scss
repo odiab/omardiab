@@ -16,8 +16,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+div#header {
+  margin-top: 5%;
+}
+
 div#header, div#content {
-  margin: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
 }
 
 div#header, div#content, div#footer {
