@@ -29,6 +29,7 @@ body {
 }
 
 div#footer {
+  clear: both;
   background: #fbfbfb;
   padding: .25%;
   text-align: center;
@@ -49,6 +50,32 @@ ul.nav li {
 ul.nav a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: black;  
+}
+
+div.iconPane {
+  clear: both;
+  overflow: hidden;
+  width: 60%;
+}
+
+div.iconPane div.leftPane, div.rightPane {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.iconPane div.leftPane {
+  width: 15%;
+  margin-right: 5%;
+}
+
+div.iconPane div.rightPane {
+  width: 75%;
+}
+
+div.leftPane img.icon {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #banner {
