@@ -1,7 +1,24 @@
 div.iconPane {
+  background: none;
+  -webkit-transition: all 0.1s ease-in; /*Safari & Chrome*/
+  transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in; /* Firefox 4 */
+  -o-transition: all 0.1s ease-in; /* Opera */
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
   clear: both;
   overflow: hidden;
   width: 60%;
+  padding: .5em;
+}
+
+a div.iconPane {
+  text-decoration: none;
 }
 
 div.iconPane div.leftPane, div.rightPane {
@@ -24,3 +41,6 @@ div.leftPane img.icon {
   max-height: 100%;
 }
 
+div.iconPane:hover {
+  background-color: #eee;
+}
