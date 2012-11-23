@@ -9,7 +9,7 @@
     = csrf_meta_tags
   %body
     #header
-      %span#banner= link_to("Omar Diab", 'home#index', id: 'bannerText');
+      %span#banner= link_to("Omar Diab", 'home', id: 'bannerText');
       %ul.nav
         -Omardiab::Application.config.sections.each do |section|
           -if section != @curSection
