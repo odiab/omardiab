@@ -1,9 +1,11 @@
 div.iconPane {
   background: none;
-  -webkit-transition: all 0.1s ease-in; /*Safari & Chrome*/
+
+  -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in; /* Firefox 4 */
-  -o-transition: all 0.1s ease-in; /* Opera */
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+
   -webkit-border-top-right-radius: 20px;
   -webkit-border-bottom-left-radius: 20px;
   -moz-border-radius-topright: 20px;
@@ -39,7 +41,6 @@ div.iconPane {
   &:hover {
     background-color: #eee;
   }
-
 }
 
 a.iconPaneLink {
