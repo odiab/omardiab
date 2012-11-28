@@ -1,0 +1,12 @@
+defaults: &defaults
+  background-color: fcfcfc
+  sections: [projects, experience, links, contact]
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
