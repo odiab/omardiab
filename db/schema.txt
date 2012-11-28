@@ -1,0 +1,43 @@
+Projects
+--------
+Title:        string, req
+Tagline:      string
+Role:         string, req
+Description:  string, req
+Start-month:  int, req
+Start-year:   int, req
+End-month:    int
+End-year:     int
+Present:      bool
+Attributes:   text [json]
+
+Experience
+----------
+Title:        string, req
+Tagline:      string
+Role:         string, req
+Description:  string, req
+Start-month:  int, req
+Start-year:   int, req
+End-month:    int
+End-year:     int
+Present:      bool
+Attributes:   text [json]
+
+Links
+-----
+Title:        string, req
+Tagline:      string
+Description:  string, req
+Month:        int, req
+Year:         int, req
+URL:          string
+Attributes:   text [json]
+
+Recommendations:
+----------------
+Title:        string, req //name
+Group:        string, req
+Description:  string, req
+Month:        string, req
+Year:         string, req
