@@ -11,7 +11,7 @@
     #header
       %span#banner= link_to("Omar Diab", 'home', id: 'bannerText');
       %ul.nav
-        -Omardiab::Application.config.sections.each do |section|
+        -APP_CONFIG['sections'].each do |section|
           -if section != @curSection
             %li.section
               = link_to(section, section)
