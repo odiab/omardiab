@@ -13,14 +13,17 @@
  */
 
 $background-color: <%= APP_CONFIG['background-color'] %>;
+$footer-background-color: <%= APP_CONFIG['footer-background-color'] %>;
 $text-color: <%= APP_CONFIG['text-color'] %>;
 $header-glow: <%= APP_CONFIG['header-glow'] %>;
+$header-glow-size: <%= APP_CONFIG['header-glow-size'] %>;
 $header-glow-color: <%= APP_CONFIG['header-glow-color'] %>;
 $nav-text-color: <%= APP_CONFIG['nav-text-color'] %>;
 
 body {
   background-color: $background-color;
   font-family: 'Open Sans', sans-serif;
+  color: $text-color;
   margin: 0px;
 }
 
@@ -44,7 +47,7 @@ div {
         -o-transition: all 0.3s ease-in;
 
         &:hover, &:focus, &:active {
-          text-shadow: 0px 0px 10px $header-glow-color;
+          text-shadow: 0px 0px $header-glow-size $header-glow-color;
         }
       }
     }
@@ -60,7 +63,7 @@ div {
   }
 
   &#footer {
-    background: #efefef;
+    background: $footer-background-color;
     padding-top: .25%;
     padding-bottom: .25%;
     text-align: center;
