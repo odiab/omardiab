@@ -1,7 +1,9 @@
 defaults: &defaults
   background-color: "#FCFCFC"
+  footer-background-color: "#EFEFEF"
   text-color: black
   header-glow: true
+  header-glow-size: 10px
   header-glow-color: "#FF87FF"
   nav-text-color: black
   title: Omar Diab
