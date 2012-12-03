@@ -2,14 +2,14 @@
 %html
   %head
   %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600', rel: 'stylesheet', type: 'text/css'}
-    %title Omar Diab
+    %title= APP_CONFIG['title']
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application", "welcome"
     = @headtags
     = csrf_meta_tags
   %body
     #header
-      %span#banner= link_to("Omar Diab", 'home', id: 'bannerText');
+      %span#banner= link_to(APP_CONFIG['title'], 'home', id: 'bannerText');
       %ul.nav
         -APP_CONFIG['sections'].each do |section|
           -if section != @curSection
