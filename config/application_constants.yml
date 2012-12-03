@@ -1,5 +1,9 @@
 defaults: &defaults
-  background-color: "#fcfcfc"
+  background-color: "#FCFCFC"
+  text-color: black
+  header-glow: true
+  header-glow-color: "#FF87FF"
+  nav-text-color: black
   sections: [projects, experience, links, contact]
 
 development:
