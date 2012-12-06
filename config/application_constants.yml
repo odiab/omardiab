@@ -6,6 +6,7 @@ defaults: &defaults
   header-glow-size: 10px
   header-glow-color: "#FF87FF"
   nav-text-color: black
+  num-bgs: 0
   title: Omar Diab
   sections: [projects, experience, links, contact]
 

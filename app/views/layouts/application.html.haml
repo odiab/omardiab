@@ -1,4 +1,10 @@
 !!!
+
+- numBgs = APP_CONFIG['num-bgs'];
+- if numBgs == 0
+  - bgName = false
+- else
+  - bgName = "bg/" + rand(numBgs).to_s
 %html
   %head
   %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600', rel: 'stylesheet', type: 'text/css'}
@@ -16,7 +22,11 @@
             %li.section
               = link_to(section, section)
     #content
-      = yield
+      #contentPane
+        = yield
+      #bgPane
+        -if bgName != false
+          = image_tag(bgName + ".png")
     #footer
       %p
         Omar Diab &copy; 2012 &#124; 
